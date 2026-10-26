@@ -901,8 +901,8 @@
           },
           {
             "position": {
-              "x": 1040,
-              "y": 360
+              "x": 1080,
+              "y": 350
             },
             "size": {
               "width": 112.5,
@@ -1856,6 +1856,52 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
+              "name": "Payment\nResponse",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Payment\nResponse"
+            ],
+            "id": "a6b2966a-a4f8-4d42-822b-7a78226a867d",
+            "source": {
+              "x": 1080,
+              "y": 300
+            },
+            "target": {
+              "cell": "8dd60fa7-5c37-4810-a2b7-5f0fc2eaf3a7",
+              "port": "45146c37-11c8-40b4-88fb-4c3739f7b2ca"
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 14,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
               "name": "Data Flow",
               "description": "",
               "outOfScope": false,
@@ -1872,15 +1918,21 @@
             "labels": [
               "Data Flow"
             ],
-            "id": "a6b2966a-a4f8-4d42-822b-7a78226a867d",
+            "id": "c9617455-619c-4d3e-9fa8-f8086929cd3f",
             "source": {
-              "x": 1080,
-              "y": 300
+              "x": 880,
+              "y": 280
             },
             "target": {
-              "cell": "8dd60fa7-5c37-4810-a2b7-5f0fc2eaf3a7",
-              "port": "45146c37-11c8-40b4-88fb-4c3739f7b2ca"
-            }
+              "x": 1060,
+              "y": 405
+            },
+            "vertices": [
+              {
+                "x": 1000,
+                "y": 330
+              }
+            ]
           }
         ],
         "description": "Threat model of TicketVault's components, data flows, and trust boundaries"
