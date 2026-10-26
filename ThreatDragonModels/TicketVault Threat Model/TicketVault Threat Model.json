@@ -199,7 +199,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Boundary",
-              "name": "Trust Boundary",
+              "name": "",
               "description": "",
               "isTrustBoundary": true,
               "hasOpenThreats": false,
@@ -207,7 +207,7 @@
               "containedElements": []
             },
             "labels": [
-              "Trust Boundary"
+              ""
             ],
             "id": "b5234a26-d7ca-403c-b382-aa09d4c22666",
             "source": {
@@ -226,6 +226,10 @@
               {
                 "x": 770,
                 "y": 250
+              },
+              {
+                "x": 790,
+                "y": 330
               }
             ]
           },
