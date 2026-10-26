@@ -124,6 +124,40 @@
           },
           {
             "position": {
+              "x": 496,
+              "y": 18.000000000000128
+            },
+            "size": {
+              "width": 130,
+              "height": 150
+            },
+            "attrs": {
+              "label": {
+                "text": "Organizer Only"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "e5d39c23-63f2-4727-a00d-d06303ce639a",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Organizer Only",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "10ab8131-3b21-4b22-a734-94d535b52c2e",
+                "46ce2c21-22da-47b6-9f11-f0193de57a99",
+                "60695c1f-bb74-4dfa-96c9-6f024acd4aca"
+              ],
+              "containedElements": [
+                "6a526c44-cf22-4377-91ab-c213834f1c09"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 250,
               "y": 155
             },
@@ -1102,7 +1136,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e5d39c23-63f2-4727-a00d-d06303ce639a"
+              ]
             },
             "labels": [
               "HTTPS Request"
@@ -1154,7 +1190,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e5d39c23-63f2-4727-a00d-d06303ce639a"
+              ]
             },
             "labels": [
               "HTTPS Response"
@@ -1468,7 +1506,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "e5d39c23-63f2-4727-a00d-d06303ce639a"
+              ]
             },
             "labels": [
               "API Response"
