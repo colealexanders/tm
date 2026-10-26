@@ -121,6 +121,39 @@
             }
           },
           {
+            "position": {
+              "x": 1073.25,
+              "y": 155
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "label": {
+                "text": "3rd Party"
+              }
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "c55e210e-1f60-4965-bec4-378f4a9f38e2",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "3rd Party",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "64010491-94d1-4c5e-87ed-d92a6ad525bb",
+                "a6b2966a-a4f8-4d42-822b-7a78226a867d"
+              ],
+              "containedElements": [
+                "b3d57f90-6135-4dbd-9c08-0f04d9133832"
+              ]
+            }
+          },
+          {
             "shape": "trust-boundary-curve",
             "width": 200,
             "height": 100,
@@ -144,8 +177,8 @@
               "y": 40
             },
             "target": {
-              "x": 1050,
-              "y": 150
+              "x": 1040,
+              "y": 170
             },
             "vertices": [
               {
@@ -234,42 +267,74 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
-            }
-          },
-          {
-            "position": {
-              "x": 1073.25,
-              "y": 155
-            },
-            "size": {
-              "width": 130,
-              "height": 110
-            },
-            "attrs": {
-              "label": {
-                "text": "3rd Party"
-              }
-            },
-            "visible": true,
-            "shape": "trust-boundary-box",
-            "id": "c55e210e-1f60-4965-bec4-378f4a9f38e2",
-            "zIndex": -1,
-            "data": {
-              "type": "tm.BoundaryBox",
-              "name": "3rd Party",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [
-                "64010491-94d1-4c5e-87ed-d92a6ad525bb",
-                "a6b2966a-a4f8-4d42-822b-7a78226a867d"
-              ],
-              "containedElements": [
-                "b3d57f90-6135-4dbd-9c08-0f04d9133832"
-              ]
             }
           },
           {
