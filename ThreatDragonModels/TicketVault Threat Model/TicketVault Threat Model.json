@@ -20,40 +20,6 @@
         "version": "2.6.2",
         "cells": [
           {
-            "shape": "trust-boundary-curve",
-            "width": 200,
-            "height": 100,
-            "zIndex": -1,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Boundary",
-              "name": "",
-              "description": "",
-              "isTrustBoundary": true,
-              "hasOpenThreats": false,
-              "crossingFlows": [],
-              "containedElements": []
-            },
-            "labels": [
-              ""
-            ],
-            "id": "72189cf2-6adc-42ff-ba82-71ec5d563caf",
-            "source": {
-              "x": 329,
-              "y": 290
-            },
-            "target": {
-              "x": 360,
-              "y": 420
-            },
-            "vertices": [
-              {
-                "x": 420,
-                "y": 330
-              }
-            ]
-          },
-          {
             "position": {
               "x": 1072.25,
               "y": 300.0000000000001
@@ -232,6 +198,84 @@
                 "y": 330
               }
             ]
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [],
+              "containedElements": []
+            },
+            "labels": [
+              ""
+            ],
+            "id": "72189cf2-6adc-42ff-ba82-71ec5d563caf",
+            "source": {
+              "x": 600,
+              "y": 340
+            },
+            "target": {
+              "x": 620,
+              "y": 490
+            },
+            "vertices": [
+              {
+                "x": 640,
+                "y": 370
+              },
+              {
+                "x": 670,
+                "y": 430
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
           },
           {
             "position": {
@@ -1366,7 +1410,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTPS\nRequest",
+              "name": "App\nRequest",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1380,7 +1424,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "HTTPS\nRequest"
+              "App\nRequest"
             ],
             "id": "211492b5-6242-4b9f-a76c-7b528b376460",
             "source": {
@@ -1418,7 +1462,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTPS\nResponse",
+              "name": "App\nResponse",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1432,7 +1476,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "HTTPS\nResponse"
+              "App\nResponse"
             ],
             "id": "30514d42-1ba3-4eb2-8047-88ab0f258af9",
             "source": {
