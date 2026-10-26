@@ -35,8 +35,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "0f04e330-c43c-4d19-adeb-a4a9b19f1365",
             "zIndex": -1,
+            "id": "0f04e330-c43c-4d19-adeb-a4a9b19f1365",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "3rd Party Vendors",
@@ -176,6 +176,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -259,7 +260,6 @@
               ]
             },
             "id": "9179359a-02a1-4fa7-bd79-e1a56ccd4cbf",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Website",
@@ -293,6 +293,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -376,7 +377,6 @@
               ]
             },
             "id": "f164ed59-fc1e-435a-b354-be416ea5223c",
-            "zIndex": 2,
             "data": {
               "type": "tm.Process",
               "name": "WebApp",
@@ -413,6 +413,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -496,7 +497,6 @@
               ]
             },
             "id": "bc2caae1-43ca-405e-8100-f897590afe7d",
-            "zIndex": 3,
             "data": {
               "type": "tm.Actor",
               "name": "MobileDevice",
@@ -530,6 +530,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -626,8 +627,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 4
+            }
           },
           {
             "position": {
@@ -650,6 +650,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -746,8 +747,7 @@
               "isWebApplication": false,
               "privilegeLevel": "",
               "threats": []
-            },
-            "zIndex": 5
+            }
           },
           {
             "position": {
@@ -770,6 +770,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 6,
             "ports": {
               "groups": {
                 "top": {
@@ -853,7 +854,6 @@
               ]
             },
             "id": "18eedfb0-7e7e-4832-a6b1-3f75edfe678a",
-            "zIndex": 6,
             "data": {
               "type": "tm.Process",
               "name": "API",
@@ -893,6 +893,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -990,8 +991,7 @@
               "storesCredentials": false,
               "storesInventory": false,
               "threats": []
-            },
-            "zIndex": 9
+            }
           },
           {
             "shape": "flow",
@@ -1087,54 +1087,108 @@
               "y": 140
             },
             "target": {
-              "x": 30,
-              "y": 240
-            }
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
+              "cell": "9179359a-02a1-4fa7-bd79-e1a56ccd4cbf",
+              "port": "c7d5187d-060d-4706-bab5-5ec986310f5c"
             },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Data Flow",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Data Flow"
-            ],
-            "id": "28475f02-c00c-46b5-9f27-ec35a6c3ede0",
-            "source": {
-              "x": -85,
-              "y": 15
-            },
-            "target": {
-              "x": 15,
-              "y": 115
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
             }
           },
           {
@@ -1158,6 +1212,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1241,7 +1296,6 @@
               ]
             },
             "id": "8f88f2cb-1f74-4649-a387-397dd12b1db2",
-            "zIndex": 11,
             "data": {
               "type": "tm.Actor",
               "name": "PaymentVendor",
@@ -1275,6 +1329,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 12,
             "ports": {
               "groups": {
                 "top": {
@@ -1368,8 +1423,7 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            },
-            "zIndex": 12
+            }
           },
           {
             "position": {
@@ -1387,8 +1441,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "025dcfb5-8c8b-4319-93fe-94daa15cf9f8",
             "zIndex": 13,
+            "id": "025dcfb5-8c8b-4319-93fe-94daa15cf9f8",
             "data": {
               "type": "tm.Text",
               "name": "User",
@@ -1411,8 +1465,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "705dc9b1-a29e-4cad-9f05-9223ab8e2279",
             "zIndex": 14,
+            "id": "705dc9b1-a29e-4cad-9f05-9223ab8e2279",
             "data": {
               "type": "tm.Text",
               "name": "Organizer",
