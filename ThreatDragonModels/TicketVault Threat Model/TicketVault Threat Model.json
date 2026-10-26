@@ -1130,7 +1130,7 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Repudiation",
-                  "description": "A customer requests a refund but is denied because there is no record of the transaction.",
+                  "description": "A customer requests a refund but because there is no record of the transaction, the refund is denied.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1140,7 +1140,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "repudiation": 2
+                "repudiation": 3
               }
             }
           },
@@ -2365,7 +2365,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
-                  "description": "We store sensitive banking information in our database. We need to make sure that it is secure, since this would be a high value item to an attacker.",
+                  "description": "We store sensitive banking information in our database. If we have poor database permissions, we may leak this information to an attacker.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2376,9 +2376,16 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 2,
+                "informationDisclosure": 3,
                 "denialOfService": 0
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
