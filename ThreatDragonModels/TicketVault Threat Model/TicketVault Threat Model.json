@@ -136,8 +136,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "c55e210e-1f60-4965-bec4-378f4a9f38e2",
             "zIndex": -1,
+            "id": "c55e210e-1f60-4965-bec4-378f4a9f38e2",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "3rd Party",
@@ -180,12 +180,6 @@
               "x": 1040,
               "y": 170
             },
-            "vertices": [
-              {
-                "x": 980,
-                "y": 90
-              }
-            ],
             "tools": {
               "items": [
                 "boundary",
@@ -335,7 +329,13 @@
                 "target-arrowhead"
               ],
               "name": null
-            }
+            },
+            "vertices": [
+              {
+                "x": 980,
+                "y": 90
+              }
+            ]
           },
           {
             "position": {
