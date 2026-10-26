@@ -40,6 +40,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 1,
             "ports": {
               "groups": {
                 "top": {
@@ -123,7 +124,6 @@
               ]
             },
             "id": "800765b2-fbcc-4d9b-a8cd-5005ccfe141f",
-            "zIndex": 1,
             "data": {
               "type": "tm.Actor",
               "name": "Browser",
@@ -158,6 +158,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 2,
             "ports": {
               "groups": {
                 "top": {
@@ -241,7 +242,6 @@
               ]
             },
             "id": "9dbf798b-f827-4da4-9587-87f032c89ebc",
-            "zIndex": 2,
             "data": {
               "type": "tm.Actor",
               "name": "Mobile Device",
@@ -275,6 +275,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 3,
             "ports": {
               "groups": {
                 "top": {
@@ -358,7 +359,6 @@
               ]
             },
             "id": "6a526c44-cf22-4377-91ab-c213834f1c09",
-            "zIndex": 3,
             "data": {
               "type": "tm.Process",
               "name": "Organizer \nWeb App",
@@ -395,6 +395,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 4,
             "ports": {
               "groups": {
                 "top": {
@@ -478,7 +479,6 @@
               ]
             },
             "id": "1d7d00f6-ce3d-4527-be52-2f6490761787",
-            "zIndex": 4,
             "data": {
               "type": "tm.Process",
               "name": "Web\nApp",
@@ -515,6 +515,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 5,
             "ports": {
               "groups": {
                 "top": {
@@ -598,7 +599,6 @@
               ]
             },
             "id": "089cba19-e661-44d1-ba63-8c42fa0f2af8",
-            "zIndex": 5,
             "data": {
               "type": "tm.Process",
               "name": "Mobile\nApp",
@@ -630,8 +630,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "96110b89-8d72-4aa6-b39d-6787477ab54a",
             "zIndex": 6,
+            "id": "96110b89-8d72-4aa6-b39d-6787477ab54a",
             "data": {
               "type": "tm.Text",
               "name": "User",
@@ -654,8 +654,8 @@
             },
             "visible": true,
             "shape": "td-text-block",
-            "id": "43e210b9-46c4-4e0f-9b73-7ae43c5d9372",
             "zIndex": 7,
+            "id": "43e210b9-46c4-4e0f-9b73-7ae43c5d9372",
             "data": {
               "type": "tm.Text",
               "name": "Organizer",
@@ -683,6 +683,7 @@
             },
             "visible": true,
             "shape": "process",
+            "zIndex": 8,
             "ports": {
               "groups": {
                 "top": {
@@ -766,7 +767,6 @@
               ]
             },
             "id": "8dd60fa7-5c37-4810-a2b7-5f0fc2eaf3a7",
-            "zIndex": 8,
             "data": {
               "type": "tm.Process",
               "name": "API",
@@ -803,6 +803,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 9,
             "ports": {
               "groups": {
                 "top": {
@@ -886,7 +887,6 @@
               ]
             },
             "id": "b3d57f90-6135-4dbd-9c08-0f04d9133832",
-            "zIndex": 9,
             "data": {
               "type": "tm.Actor",
               "name": "Payment\nVendor",
@@ -920,6 +920,7 @@
             },
             "visible": true,
             "shape": "actor",
+            "zIndex": 10,
             "ports": {
               "groups": {
                 "top": {
@@ -1003,7 +1004,6 @@
               ]
             },
             "id": "2d3f50b4-99fe-445e-9279-1b778d88e2fa",
-            "zIndex": 10,
             "data": {
               "type": "tm.Actor",
               "name": "SMS\nVendor",
@@ -1036,7 +1036,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Web Response\n(HTTPS)",
+              "name": "HTTPS Request",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1050,23 +1050,229 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Web Response\n(HTTPS)"
+              "HTTPS Request"
             ],
-            "id": "32612e31-d3c1-4416-9838-3e6b74c24867",
+            "id": "10ab8131-3b21-4b22-a734-94d535b52c2e",
             "source": {
-              "x": 520,
-              "y": 95
+              "x": 268,
+              "y": 155
+            },
+            "target": {
+              "cell": "6a526c44-cf22-4377-91ab-c213834f1c09",
+              "port": "a546b782-2dc5-4782-9fa4-06d92830c240"
+            },
+            "vertices": [
+              {
+                "x": 350,
+                "y": 65
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS Response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "HTTPS Response"
+            ],
+            "id": "46ce2c21-22da-47b6-9f11-f0193de57a99",
+            "source": {
+              "cell": "6a526c44-cf22-4377-91ab-c213834f1c09",
+              "port": "d41a596c-98c1-44f2-9a6d-edb8138b81f4"
             },
             "target": {
               "cell": "800765b2-fbcc-4d9b-a8cd-5005ccfe141f",
-              "port": "8ef7adfa-c5fa-4adc-bcd4-8664438c75ec"
+              "port": "48d92cba-2d14-43f8-a90d-1c65788cb687"
+            },
+            "vertices": [
+              {
+                "x": 420,
+                "y": 90
+              },
+              {
+                "x": 360,
+                "y": 110
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS \nRequest",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "HTTPS \nRequest"
+            ],
+            "id": "46573fc0-2ca5-4daf-8706-770a8557113d",
+            "source": {
+              "x": 363,
+              "y": 155
+            },
+            "target": {
+              "cell": "1d7d00f6-ce3d-4527-be52-2f6490761787",
+              "port": "a546b782-2dc5-4782-9fa4-06d92830c240"
+            },
+            "vertices": [
+              {
+                "x": 460,
+                "y": 155
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS\nRequest",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "HTTPS\nRequest"
+            ],
+            "id": "211492b5-6242-4b9f-a76c-7b528b376460",
+            "source": {
+              "x": 363,
+              "y": 325
+            },
+            "target": {
+              "cell": "089cba19-e661-44d1-ba63-8c42fa0f2af8",
+              "port": "a546b782-2dc5-4782-9fa4-06d92830c240"
             },
             "vertices": [
               {
                 "x": 450,
-                "y": 70
+                "y": 325
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS\nResponse",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "HTTPS\nResponse"
+            ],
+            "id": "30514d42-1ba3-4eb2-8047-88ab0f258af9",
+            "source": {
+              "x": 520,
+              "y": 421
+            },
+            "target": {
+              "cell": "9dbf798b-f827-4da4-9587-87f032c89ebc",
+              "port": "8ef7adfa-c5fa-4adc-bcd4-8664438c75ec"
+            }
           },
           {
             "position": {
@@ -1092,6 +1298,7 @@
             },
             "visible": true,
             "shape": "store",
+            "zIndex": 11,
             "ports": {
               "groups": {
                 "top": {
@@ -1175,7 +1382,6 @@
               ]
             },
             "id": "fca82cb4-89e4-4188-954b-ace2bcc98ee4",
-            "zIndex": 11,
             "data": {
               "type": "tm.Store",
               "name": "TicketVault\nDatabase",
@@ -1191,6 +1397,53 @@
               "storesInventory": false,
               "threats": []
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 12,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "HTTPS\nResponse",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "HTTPS\nResponse"
+            ],
+            "id": "4861bb76-ffc6-4517-8141-8c87aa8ad8ca",
+            "source": {
+              "x": 532,
+              "y": 230
+            },
+            "target": {
+              "cell": "800765b2-fbcc-4d9b-a8cd-5005ccfe141f",
+              "port": "8ef7adfa-c5fa-4adc-bcd4-8664438c75ec"
+            },
+            "vertices": []
           }
         ],
         "description": "Threat model of TicketVault's components, data flows, and trust boundaries"
