@@ -272,6 +272,11 @@
                 "button-remove",
                 "vertices",
                 "source-arrowhead",
+                "target-arrowhead",
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
                 "target-arrowhead"
               ],
               "name": null
@@ -754,7 +759,7 @@
           },
           {
             "position": {
-              "x": 520,
+              "x": 521,
               "y": 375
             },
             "size": {
@@ -1937,6 +1942,10 @@
               {
                 "x": 930,
                 "y": 95
+              },
+              {
+                "x": 890,
+                "y": 180
               }
             ]
           },
