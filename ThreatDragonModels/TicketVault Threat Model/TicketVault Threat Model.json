@@ -69,8 +69,8 @@
             },
             "visible": true,
             "shape": "trust-boundary-box",
-            "id": "6aa6820b-f14c-4f20-a595-466f7ad72ee9",
             "zIndex": -1,
+            "id": "6aa6820b-f14c-4f20-a595-466f7ad72ee9",
             "data": {
               "type": "tm.BoundaryBox",
               "name": "3rd Party",
@@ -2319,57 +2319,7 @@
                 "x": 1030,
                 "y": 320
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead",
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "position": {
@@ -2674,7 +2624,12 @@
               "x": 1030,
               "y": 450
             },
-            "vertices": []
+            "vertices": [
+              {
+                "x": 950,
+                "y": 270
+              }
+            ]
           }
         ],
         "description": "Threat model of TicketVault's components, data flows, and trust boundaries"
