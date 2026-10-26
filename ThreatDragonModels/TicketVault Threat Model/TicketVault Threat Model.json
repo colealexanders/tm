@@ -1826,7 +1826,13 @@
             "target": {
               "cell": "9dbf798b-f827-4da4-9587-87f032c89ebc",
               "port": "f96a149c-847a-4605-85d6-9ae2075f1332"
-            }
+            },
+            "vertices": [
+              {
+                "x": 180,
+                "y": 350
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -1873,6 +1879,58 @@
               "cell": "800765b2-fbcc-4d9b-a8cd-5005ccfe141f",
               "port": "f96a149c-847a-4605-85d6-9ae2075f1332"
             }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Uses",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Uses"
+            ],
+            "id": "3c6cae45-df89-4d1d-8e4a-037b72edca09",
+            "source": {
+              "x": 101,
+              "y": 325
+            },
+            "target": {
+              "cell": "800765b2-fbcc-4d9b-a8cd-5005ccfe141f",
+              "port": "2f171cb3-237a-4404-8316-29ec6d28f21d"
+            },
+            "vertices": [
+              {
+                "x": 250,
+                "y": 270
+              }
+            ]
           },
           {
             "position": {
