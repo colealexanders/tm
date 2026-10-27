@@ -1142,13 +1142,6 @@
                 "spoofing": 0,
                 "repudiation": 5
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
