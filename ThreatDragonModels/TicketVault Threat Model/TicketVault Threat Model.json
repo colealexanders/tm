@@ -1126,7 +1126,7 @@
               "threats": [
                 {
                   "id": "02ee2e34-ce3b-441d-9fe7-8dadb0dfd775",
-                  "title": "Payment Refused",
+                  "title": "Refused Refund",
                   "status": "Open",
                   "severity": "Low",
                   "type": "Repudiation",
@@ -1140,7 +1140,7 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "repudiation": 4
+                "repudiation": 5
               }
             },
             "tools": {
@@ -1880,9 +1880,9 @@
               "threats": [
                 {
                   "id": "a5e61c1e-a9b5-4cc3-8959-a7813b751e47",
-                  "title": "Data Manipulation",
+                  "title": "Manipulated Ticket Prices",
                   "status": "Open",
-                  "severity": "Low",
+                  "severity": "Medium",
                   "type": "Tampering",
                   "description": "An attacker performs a SQL injection, changing things such as ticket prices.",
                   "mitigation": "",
@@ -1894,7 +1894,7 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 3,
+                "tampering": 4,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1925,8 +1925,8 @@
                 "y": 170
               },
               {
-                "x": 990,
-                "y": 150
+                "x": 1010,
+                "y": 130
               }
             ]
           },
