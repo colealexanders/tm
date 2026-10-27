@@ -474,7 +474,7 @@
           },
           {
             "position": {
-              "x": 520,
+              "x": 521,
               "y": 65
             },
             "size": {
@@ -596,7 +596,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Elevation of privilege",
-                  "description": "A customer finds that there's a bug in the permission check and makes valid requests from the organizer portal.",
+                  "description": "A customer finds a bug in the permission check and makes valid requests from the organizer portal.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -610,7 +610,7 @@
                 "repudiation": 0,
                 "informationDisclosure": 0,
                 "denialOfService": 0,
-                "elevationOfPrivilege": 1
+                "elevationOfPrivilege": 2
               }
             }
           },
@@ -978,7 +978,7 @@
                   "status": "Open",
                   "severity": "Critical",
                   "type": "Denial of service",
-                  "description": "An attacker sends so many requests to the API that it gets overloaded and stops working. All pieces of the app talk to this API, so if it went down, the app goes down.",
+                  "description": "An attacker sends so many requests to the API that it gets overloaded and stops working. All pieces of the app talk to this API, so if it goes down, the app goes down.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1004,7 +1004,7 @@
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
-                "denialOfService": 3,
+                "denialOfService": 4,
                 "elevationOfPrivilege": 0
               }
             }
@@ -1130,7 +1130,7 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Repudiation",
-                  "description": "A customer requests a refund but because there is no record of the transaction, the refund is denied.",
+                  "description": "A customer requests a refund, but because there is no record of the transaction and the vendor doesn't keep records for us, the transaction is denied.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1140,8 +1140,15 @@
               ],
               "threatFrequency": {
                 "spoofing": 0,
-                "repudiation": 3
+                "repudiation": 4
               }
+            },
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove"
+              ],
+              "name": null
             }
           },
           {
@@ -1877,7 +1884,7 @@
                   "status": "Open",
                   "severity": "Low",
                   "type": "Tampering",
-                  "description": "An attacker tempers with the database, changing things such as ticket prices.",
+                  "description": "An attacker performs a SQL injection, changing things such as ticket prices.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -1887,7 +1894,7 @@
               ],
               "trustBoundaryIds": [],
               "threatFrequency": {
-                "tampering": 2,
+                "tampering": 3,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1908,6 +1915,10 @@
               {
                 "x": 900,
                 "y": 200
+              },
+              {
+                "x": 920,
+                "y": 170
               },
               {
                 "x": 970,
@@ -2238,7 +2249,7 @@
           {
             "position": {
               "x": 1036.25,
-              "y": 65
+              "y": 63.00000000000013
             },
             "size": {
               "width": 120,
@@ -2365,7 +2376,7 @@
                   "status": "Open",
                   "severity": "High",
                   "type": "Information disclosure",
-                  "description": "We store sensitive banking information in our database. If we have poor database permissions, we may leak this information to an attacker.",
+                  "description": "We store sensitive banking information in our database. An attacker notices misconfigured permissions and exploits them to expose sensitive banking information.",
                   "mitigation": "",
                   "modelType": "STRIDE",
                   "new": false,
@@ -2376,16 +2387,9 @@
               "threatFrequency": {
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 3,
+                "informationDisclosure": 4,
                 "denialOfService": 0
               }
-            },
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove"
-              ],
-              "name": null
             }
           },
           {
